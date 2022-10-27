@@ -1,0 +1,82 @@
+/* * {
+  border: 1px solid white;
+} */
+.body {
+  height: 100vh;
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  font-size: 60px;
+  font-weight: 600px;
+  color: #a0fa28;
+  padding-top: 60px;
+}
+.h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #a0fa28;
+}
+.p {
+  font-size: 20px;
+  color: white;
+
+  margin-top: 20px;
+}
+.div {
+  display: flex;
+  margin-top: 5vh;
+  align-self: center;
+  justify-content: center;
+  min-width: 60vw;
+  border: 1px solid white;
+  padding: 30px 20px;
+  box-shadow: 10px 10px 0px 2px rgba(255, 255, 255, 0.75);
+}
+.card {
+  width: 220px;
+  height: 300px;
+  margin-left: 5vw;
+  border-radius: 30px;
+  background-image: url("../assets/gamepedia.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  transition-duration: 150ms;
+  box-shadow: 5px 5px 0px 2px rgba(255, 255, 255, 0.75);
+}
+.card:hover {
+  transition-duration: 250ms;
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: none;
+  border: 2px solid white;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+}
+.descr {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .div {
+    flex-direction: column-reverse;
+    width: 90vw;
+    align-items: center;
+  }
+  .descr {
+    width: auto;
+  }
+  .card {
+    margin-left: 0;
+    margin-bottom: 2vh;
+  }
+  .p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,71 @@
+.body {
+  height: 100vh;
+  background-image: url("../assets/background-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nombre {
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+}
+.h2 {
+  font-size: 60px;
+  color: #a0fa28;
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin-left: 5vw;
+}
+.p {
+  font-size: 26px;
+  color: white;
+  width: 50vw;
+  margin-top: 30px;
+}
+.button {
+  width: fit-content;
+  height: 40px;
+  background: none;
+  border: 3px solid #a0fa28;
+  color: #a0fa28;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 5px 15px;
+  user-select: none;
+  transition-duration: 150ms;
+  font-weight: 400;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #a0fa28;
+  color: #050e13;
+  transition-duration: 250ms;
+  box-shadow: 0px 0px 14px 0px rgba(160, 250, 40, 0.75);
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .body {
+    width: 100vw;
+  }
+  .h2 {
+    font-size: 40px;
+  }
+  .nombre {
+    font-size: 40px;
+  }
+  .div {
+    margin-top: 0;
+    padding-left: 5vh;
+    margin-left: 0;
+  }
+  .p {
+    width: 70vw;
+  }
+}
