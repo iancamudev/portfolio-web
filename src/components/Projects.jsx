@@ -2,10 +2,10 @@ import React from "react";
 import styles from "../styles/Proyects.module.css";
 import { Link } from "react-router-dom";
 
-const Proyects = () => {
+const Projects = () => {
   return (
     <div className={styles.body}>
-      <h3 className={styles.header}>Proyects</h3>
+      <h3 className={styles.header}>Projects</h3>
       <div className={styles.div}>
         <div className={styles.descr}>
           <h3 className={styles.h3}>Gamepedia</h3>
@@ -24,4 +24,4 @@ const Proyects = () => {
   );
 };
 
-export default Proyects;
+export default Projects;
